@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App.CardLayout" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">50.0dip</item>
+        <item name="android:layout_marginBottom">60.0dip</item>
+    </style>
+    <style name="LocationBarText.City" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20.0dip</item>
+    </style>
+    <style name="PanelText.Now" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:layout_marginTop">28.0dip</item>
+    </style>
+    <style name="PanelText.Time" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_marginTop">-4.0dip</item>
+    </style>
+    <style name="PanelText.Temperature" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">56.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PanelText.Temperature.Unit" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">36.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PanelText.RealFeel.Label" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="PanelText.RealFeel" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">31.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="PanelText.RealFeel.Unit" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="PanelLayout.Temperature" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">-18.0dip</item>
+    </style>
+    <style name="PanelLayout.RealFeel" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">-11.0dip</item>
+    </style>
+    <style name="PanelLayout.Spacer" parent="@android:style/Widget">
+        <item name="android:layout_width">108.0dip</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">-10.0dip</item>
+    </style>
+    <style name="PanelText.Now.Paid" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="PanelText.Time.Paid" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="PanelLayout.Temperature.Paid" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">-14.0dip</item>
+    </style>
+    <style name="PanelText.Temperature.Paid" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">56.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PanelText.Temperature.Unit.Paid" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">36.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PanelLayout.Spacer.Paid" parent="@android:style/Widget">
+        <item name="android:layout_width">108.0dip</item>
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">-6.0dip</item>
+    </style>
+    <style name="PanelText.RealFeel.Label.Paid" parent="@android:style/Widget">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="PanelLayout.RealFeel.Paid" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">-7.0dip</item>
+    </style>
+    <style name="PanelText.RealFeel.Paid" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">31.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:layout_marginTop">-6.0dip</item>
+    </style>
+    <style name="CurrentLayout.SnapHorizontalScrollView" parent="@android:style/Widget" />
+    <style name="CurrentLayout.IndicatorLayout" parent="@android:style/Widget">
+        <item name="android:paddingBottom">36.0dip</item>
+    </style>
+    <style name="CurrentLayout.SlidingIndicator" parent="@android:style/Widget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">24.0dip</item>
+    </style>
+    <style name="CurrentBottomModule.Layout" parent="@android:style/Widget">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+    </style>
+    <style name="CurrentBottomModule.ShortText.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="CurrentBottomModuleText.TextSize.Bold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="CurrentBottomModuleText.TextSize" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="CurrentBottomModule.Wind.Layout" parent="@android:style/Widget" />
+    <style name="HourlyText.Time" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="HourlyText.Date" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="HourlyText.Temperature" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">31.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="HourlyBottomModuleText.TextSize.Bold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="HourlyBottomModuleText.TextSize" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ForecastListItem.DayDate.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="ForecastListItem.Temperature.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">29.0dip</item>
+    </style>
+    <style name="ForecastListItem.Icon" parent="@android:style/Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="ForecastListItem.DayTemp.Layout" parent="@android:style/Widget">
+        <item name="android:paddingRight">10.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.TableContents" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.Container" parent="@android:style/Widget">
+        <item name="android:padding">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">320.0dip</item>
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.ViewToggleImage" parent="@android:style/Widget">
+        <item name="android:layout_width">24.0dip</item>
+        <item name="android:layout_height">24.0dip</item>
+    </style>
+    <style name="ForecastLayout.Details.DayTextLayout" parent="@android:style/Widget">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">54.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">-4.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.RealFeelText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">9.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff888888</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.RealFeelTempText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff888888</item>
+        <item name="android:layout_marginTop">-3.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.TempText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">28.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_marginTop">-6.0dip</item>
+    </style>
+    <style name="ForecastLayout.Details.TableContents.Precip" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.DayCondition" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.NightCondition" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.DayNightIcon" parent="@android:style/Widget">
+        <item name="android:layout_width">54.0dip</item>
+        <item name="android:layout_height">54.0dip</item>
+        <item name="android:layout_marginLeft">7.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.DayTextSizeBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ForecastLayout.Detail.NightTextSizeGrayBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="ForecastLayout.Detail.DefaultTextSize" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ForecastLayout.Detail.DefaultTextSizeBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="ForecastLayout.Detail.DefaultTextSizeGray" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="ForecastLayout.Detail.DefaultTextSizeGrayBold" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="ForecastLayout.Details.TableLayout" parent="@android:style/Widget">
+        <item name="android:layout_marginLeft">-8.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.WindLinearLayout" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.TableHeadings" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff888888</item>
+    </style>
+    <style name="ForecastLayout.Detail.TableRow" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="MapView.WebView" parent="@android:style/Widget" />
+    <style name="MapView.Layout" parent="@android:style/Widget">
+        <item name="android:paddingTop">28.0dip</item>
+    </style>
+    <style name="MapView.MapKey.CloudCover" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">11.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_marginTop">-7.0dip</item>
+    </style>
+    <style name="MapView.MapKey.Rain" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="MapView.MapKey.Snow" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="MapView.MapKey.Ice" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_marginTop">-2.0dip</item>
+    </style>
+    <style name="MapView.MapKey.High" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="MapView.MapKey.Low" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="MapView.MapKey.Light" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="MapView.MapKey.Heavy" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_marginLeft">30.0dip</item>
+    </style>
+    <style name="MapView.MapKey.Severe" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="MapView.MapKey.LinearLayout" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">-4.0dip</item>
+    </style>
+    <style name="MapView.MapKey.LinearLayoutHiLo" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">-10.0dip</item>
+    </style>
+    <style name="MapView.OverlayTime.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_marginLeft">64.0dip</item>
+    </style>
+    <style name="Widget.Landscape.WidgetIcon" parent="@android:style/Widget">
+        <item name="android:layout_marginLeft">68.0dip</item>
+        <item name="android:layout_marginTop">-6.0dip</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="Widget.Landscape.WidgetTemperature.LinearLayout" parent="@android:style/Widget">
+        <item name="android:paddingRight">50.0dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="Widget.Landscape.WidgetCity.LinearLayout" parent="@android:style/Widget">
+        <item name="android:paddingRight">90.0dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+    <style name="NewsView.Headlines.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="NewsView.Time.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">12.0dip</item>
+    </style>
+    <style name="NewsView.Description.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+    <style name="VideoView.Video.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+    <style name="VideoView.Description.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+    <style name="LocationsView.Buttons.LinearLayout" parent="@android:style/Widget">
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_marginTop">-36.0dip</item>
+    </style>
+    <style name="LifestyleItem.IndexName.Text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">some message</item>
+    </style>
+    <style name="LifestyleItem.Value.Text" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">24.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Good</item>
+    </style>
+    <style name="App.Layout" parent="@android:style/Widget">
+        <item name="android:paddingTop">28.0dip</item>
+    </style>
+    <style name="Panel.Layout" parent="@android:style/Widget">
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="CurrentBottomModule.Layout.TableLayout" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="CurrentBottomModule.WindText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="CurrentBottomModule.TableLayout.Wind" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">6.0dip</item>
+    </style>
+    <style name="HourlyBottomModule.ShortText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.RelativeLayout" parent="@android:style/Widget">
+        <item name="android:padding">4.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.TableLayout.AlarmIcon" parent="@android:style/Widget">
+        <item name="android:layout_marginLeft">9.0dip</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.ThunderstormLayout" parent="@android:style/Widget" />
+    <style name="ForecastLayout.Detail.AlarmIcon" parent="@android:style/Widget">
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+    </style>
+    <style name="ForecastLayout.Detail.ThunderstormAlarmIcon" parent="@android:style/Widget">
+        <item name="android:layout_marginLeft">9.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+    </style>
+    <style name="MapView.MapIndicator" parent="@android:style/Widget">
+        <item name="android:layout_width">213.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="ForecastLayout.Details.TableContents" parent="@android:style/Widget">
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+</resources>

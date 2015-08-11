@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_refresh_interval_descs" translatable="false">
+        <item>30 minutes​​​​​​​​</item>
+        <item>1 hour​</item>
+        <item>3 hour​</item>
+        <item>6 hour</item>
+        <item>12 hour​​​​</item>
+        <item>1 day</item>
+    </string-array>
+    <integer-array name="array_refresh_interval_values">
+        <item>1800</item>
+        <item>3600</item>
+        <item>10800</item>
+        <item>21600</item>
+        <item>43200</item>
+        <item>86400</item>
+    </integer-array>
+</resources>

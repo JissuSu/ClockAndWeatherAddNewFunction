@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/refresh_setting" >
+        <ListPreference
+            android:defaultValue="10800"
+            android:dialogTitle="@string/dlg_refresh_interval"
+            android:entries="@array/array_refresh_interval_descs"
+            android:entryValues="@array/array_refresh_interval_values"
+            android:key="refresh_interval-%d"
+            android:title="@string/pref_refresh_interval" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/location_setting" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:disableDependentsState="true"
+            android:key="auto_address-%d"
+            android:summary="@string/pref_use_my_location_desc"
+            android:title="@string/pref_use_my_location" />
+
+        <PreferenceScreen
+            android:dependency="auto_address-%d"
+            android:key="LastCity-%d"
+            android:summary="@string/pref_set_location_desc"
+            android:title="@string/pref_set_location" />
+
+        <CheckBoxPreference
+            android:key="use_celsius-%d"
+            android:summary="@string/pref_temperature_unit_desc"
+            android:title="@string/pref_temperature_unit" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/others" >
+        <Preference
+            android:key="SAVE"
+            android:title="@string/save" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

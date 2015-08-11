@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SettingTextMainTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">33dip</item>
+        <item name="android:textColor">#8DC63F</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">13dip</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">#252525</item>
+    </style>
+
+    <style name="SettingTextWindowTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:textColor">#8DC63F</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">13dip</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">#ff363636</item>
+    </style>
+
+    <style name="SettingTextLayoutTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffe</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SettingTextLayoutTitleDisable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff636363</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SettingTextSwitchTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:paddingBottom">7dip</item>
+        <item name="android:textColor">#ffe</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SettingTextLayoutDetail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#959595</item>
+        <item name="android:textSize">14dip</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SettingTextButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">43dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18dip</item>
+    </style>
+
+    <style name="SettingTextBlank">
+        <item name="android:layout_width">10dip</item>
+        <item name="android:layout_height">10dip</item>
+    </style>
+
+    <style name="SettingSingleLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">13dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/setting_layout_selector</item>
+    </style>
+
+    <style name="SettingMultiLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">13dip</item>
+        <item name="android:paddingLeft">22dip</item>
+        <item name="android:paddingRight">13dip</item>
+        <item name="android:background">#ff363636</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SettingSingleTextLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SettingMultiButtonLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SettingMainDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3dip</item>
+        <item name="android:background">#8DC63F</item>
+    </style>
+
+    <style name="SettingWindowDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#8DC63F</item>
+    </style>
+
+    <style name="SettingLayoutDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#4D4D4D</item>
+    </style>
+
+    <style name="SettingImageNext">
+        <item name="android:layout_width">22dip</item>
+        <item name="android:layout_height">22dip</item>
+        <item name="android:src">#4D4D4D</item>
+        <item name="android:gravity">right|center</item>
+    </style>
+
+    <style name="SettingImageIcon">
+        <item name="android:layout_width">38dip</item>
+        <item name="android:layout_height">29dip</item>
+        <item name="android:src">#4D4D4D</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">10dip</item>
+    </style>
+
+    <style name="SettingImageSearch">
+        <item name="android:layout_width">35dip</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dip</item>
+    </style>
+
+    <style name="SettingImageRadio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">#4D4D4D</item>
+        <item name="android:gravity">right|center</item>
+    </style>
+
+    <style name="SettingEditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:background">#ffe</item>
+        <item name="android:textSize">17dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:gravity">left|center</item>
+         <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SettingSpinner">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">34dip</item>
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">#fffffffe</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="SettingListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:gravity">left|center</item>
+         
+    </style>
+
+</resources>

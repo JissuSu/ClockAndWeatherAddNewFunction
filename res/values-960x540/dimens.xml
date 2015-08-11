@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="clock_padding_left">18dip</dimen>
+    <dimen name="clock_padding_right">18dip</dimen>
+    <dimen name="full_padding_left">30dip</dimen>
+    <dimen name="full_padding_right">30dip</dimen>
+    <dimen name="weather_padding_left">24dip</dimen>
+    <dimen name="weather_padding_right">20dip</dimen>
+
+</resources>

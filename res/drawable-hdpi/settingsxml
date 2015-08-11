@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#363636"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/SettingTextMainTitle"
+        android:text="SETTINGS" />
+
+    <ImageView style="@style/SettingMainDivider" />
+
+    <TextView
+        style="@style/SettingTextWindowTitle"
+        android:text="WEATHER SETTINGS" />
+
+    <LinearLayout
+        android:id="@+id/set_location_layout"
+        style="@style/SettingSingleLayout" >
+
+        <LinearLayout style="@style/SettingSingleTextLayout" >
+
+            <TextView
+                style="@style/SettingTextLayoutTitle"
+                android:text="Set Location" />
+
+            <TextView
+                style="@style/SettingTextLayoutDetail"
+                android:text="Tap to choose your location" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/SettingImageNext"
+            android:src="@drawable/icon_setting_more" />
+    </LinearLayout>
+
+    <ImageView style="@style/SettingLayoutDivider" />
+
+    <LinearLayout style="@style/SettingMultiLayout" >
+
+        <TextView
+            style="@style/SettingTextLayoutTitle"
+            android:text="Temperature units" />
+
+        <TextView style="@style/SettingTextBlank" />
+
+        <LinearLayout style="@style/SettingMultiButtonLayout" >
+
+            <TextView
+                android:id="@+id/c_button"
+                style="@style/SettingTextButton"
+                android:text="℃" />
+
+            <TextView style="@style/SettingTextBlank" />
+
+            <TextView
+                android:id="@+id/f_button"
+                style="@style/SettingTextButton"
+                android:text="℉" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView style="@style/SettingLayoutDivider" />
+
+    <LinearLayout
+        android:id="@+id/refresh_interval_layout"
+        style="@style/SettingSingleLayout" >
+
+        <TextView
+            style="@style/SettingTextLayoutTitle"
+            android:layout_weight="1"
+            android:text="Refresh Intervel" />
+
+        <Spinner
+            android:id="@+id/refresh_spinner"
+            style="@style/SettingSpinner"
+            android:entries="@array/array_refresh_interval_descs" >
+        </Spinner>
+    </LinearLayout>
+
+    <ImageView style="@style/SettingWindowDivider" />
+
+    <TextView
+        style="@style/SettingTextWindowTitle"
+        android:text="CLOCK SETTINGS" />
+
+    <LinearLayout style="@style/SettingSingleLayout" >
+
+        <TextView
+            style="@style/SettingTextSwitchTitle"
+            android:text="Use 24-hout format" />
+
+        <include layout="@layout/switcher" />
+    </LinearLayout>
+
+    <ImageView style="@style/SettingWindowDivider" />
+
+</LinearLayout>

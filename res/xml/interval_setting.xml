@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="flight_option_preference"
+    android:title="@string/refresh_setting" >
+
+    <ListPreference
+        android:defaultValue="10800"
+        android:dialogTitle="@string/dlg_refresh_interval"
+        android:entries="@array/array_refresh_interval_descs"
+        android:entryValues="@array/array_refresh_interval_values"
+        android:key="refresh_interval-%d"
+        android:title="@string/pref_refresh_interval" />
+
+</PreferenceScreen>

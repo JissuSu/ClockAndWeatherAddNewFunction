@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ff363636"
+        android:orientation="vertical"  >
+        <TextView
+            style="@style/SettingTextMainTitle"
+            android:text="@string/setting_settings" />
+
+        <ImageView style="@style/SettingMainDivider" />
+
+        <TextView
+            style="@style/SettingTextWindowTitle"
+            android:text="@string/setting_weather_setting" />
+<LinearLayout
+        android:id="@+id/manual_location_layout"
+        style="@style/SettingSingleLayout" >
+
+        <ImageView
+            style="@style/SettingImageIcon"
+            android:src="@drawable/icon_manual" />
+
+        <LinearLayout style="@style/SettingSingleTextLayout" >
+
+            <TextView
+                android:id="@+id/manual_location_title_text"
+                style="@style/SettingTextLayoutTitle"
+                android:text="@string/setting_manual_location" />
+
+            <TextView
+                android:id="@+id/manual_location_detail_text"
+                style="@style/SettingTextLayoutDetail"
+                android:text="@string/setting_tap_to_set" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/manual_location_radio"
+            style="@style/SettingImageNext"
+            android:src="@drawable/selector_disable" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_location_layout"
+        style="@style/SettingSingleLayout" >
+
+        <EditText
+            android:id="@+id/input"
+            style="@style/SettingEditText"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn"
+            style="@style/SettingImageSearch"
+            android:src="@drawable/button_search_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_result_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dip"
+        android:layout_marginRight="13dip" 
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="@string/setting_search_result"
+            android:textColor="#959595"
+            android:textSize="12dip" />
+
+        <ImageView style="@style/SettingLayoutDivider" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/SettingListView"
+        android:layout_marginLeft="22dip"
+        android:layout_marginRight="13dip"
+        android:divider="#4D4D4D"
+        android:dividerHeight="1px" >
+    </ListView>
+    <ImageView style="@style/SettingLayoutDivider" />
+        <LinearLayout style="@style/SettingMultiLayout" >
+
+            <TextView
+                style="@style/SettingTextLayoutTitle"
+                android:text="@string/setting_temperature_units" />
+
+            <TextView style="@style/SettingTextBlank" />
+
+            <LinearLayout style="@style/SettingMultiButtonLayout" >
+
+                <TextView
+                    android:id="@+id/c_button"
+                    style="@style/SettingTextButton"
+                    android:text="℃" />
+
+                <TextView style="@style/SettingTextBlank" />
+
+                <TextView
+                    android:id="@+id/f_button"
+                    style="@style/SettingTextButton"
+                    android:text="℉" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView style="@style/SettingLayoutDivider" />
+
+        <LinearLayout
+            android:id="@+id/refresh_interval_layout"
+            style="@style/SettingMultiLayout" >
+
+            <TextView
+                style="@style/SettingTextLayoutTitle"
+                android:layout_weight="1"
+                android:text="@string/pref_refresh_interval" />
+
+            <TextView style="@style/SettingTextBlank" />
+
+            <Spinner
+                android:id="@+id/refresh_spinner"
+                style="@style/SettingSpinner"
+                android:entries="@array/array_refresh_interval_descs" >
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>

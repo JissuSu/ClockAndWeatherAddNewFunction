@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="clock_padding_left">12dip</dimen>
+    <dimen name="clock_padding_right">12dip</dimen>
+    <dimen name="full_padding_left">15dip</dimen>
+    <dimen name="full_padding_right">15dip</dimen>
+    <dimen name="weather_padding_left">7dip</dimen>
+    <dimen name="weather_padding_right">4dip</dimen>
+    <dimen name="widget_width">285dp</dimen>
+    <dimen name="widget_height">200dp</dimen>
+    <dimen name="address_paddingleft">70dp</dimen>
+
+    <dimen name="temp_paddingbottom">70dip</dimen>
+    <dimen name="temp_margleft">2dip</dimen>
+    <dimen name="today_margtop">11dip</dimen>
+    <dimen name="today_margleft">18dip</dimen>
+    <dimen name="today_width">40dp</dimen>
+    <dimen name="bottom_right_margtop">12dp</dimen>
+    <dimen name="bottom_right_first_margleft">33dp</dimen>
+    <dimen name="clock_margtop">13dp</dimen>
+    <dimen name="week_margtop">17dp</dimen>
+    <dimen name="address_paddingtop">43dp</dimen>
+    <dimen name="weather_icon_size">90dip</dimen>
+    <dimen name="data_text_size">15dip</dimen>
+    <dimen name="low_hight_text_size">16dip</dimen>
+    <dimen name="address_text_size">17dip</dimen>
+    <dimen name="data_padding_right">5dip</dimen>
+
+</resources>

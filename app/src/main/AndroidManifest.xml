@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobi.infolife.cwwidget"
+    android:installLocation="internalOnly"
+    android:versionCode="27"
+    android:versionName="v1.9.6 beta 1">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SHOW_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name=".XKApplication"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+
+        <!-- ActiveAndroid需要 -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="XKDataBase" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <receiver
+            android:name=".FullWidget"
+            android:icon="@drawable/cw_icon"
+            android:label="@string/full_widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="mobi.infolife.myappwidgetmanagerservice.rebind" />
+                <action android:name="mobi.intuitit.android.hpp.ACTION_READY" />
+                <action android:name="mobi.infolife.utils.action.CLICK_WIDGET_DATE" />
+                <action android:name="mobi.infolife.utils.action.LOAD_LIMIT_NUM" />
+                <action android:name="mobi.infolife.utils.action.CLICK_WIDGET_CALENDAR" />
+            </intent-filter>
+
+            <meta-data
+                android:name="mobi.infolife.appwidget.provider"
+                android:resource="@xml/cw_widget" />
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/cw_widget" />
+        </receiver>
+
+        <service android:name=".ScreenStatService">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/setting"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="mobi.infolife.cwwidget.PREFS" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/DetailDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WeatherDetailActivity"
+            android:theme="@style/DetailDialog" />
+        <activity android:name=".RefreshIntervalListPreferences">
+            <intent-filter>
+                <action android:name="mobi.infolife.cwwidget.RefreshIntervalListPreferences" />
+
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".UpdateViewService" />
+        <service android:name=".UpdateDataService" />
+        <service android:name=".LoadAlarmViewService" />
+        <service android:name=".LoadBatteryViewService" />
+        <service android:name=".LoadEventsViewService" />
+        <service android:name=".LoadLunerAndHolidayViewService" />
+        <service android:name=".LoadXKViewService" />
+        <!-- 获取空气质量和指数的Service -->
+        <service android:name="mobi.infolife.limitNumAndAir.XKMain.XKDownLoadUtil" />
+
+        <meta-data
+            android:name="USE_API_LEVEL"
+            android:value="3" />
+    </application>
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="false" />
+
+</manifest>

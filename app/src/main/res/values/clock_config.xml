@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="clockweather_42_theme1_clocktext_text1_textcolor">#000000</color>
+    <color name="clockweather_42_theme1_clocktext_text2_textcolor">#000000</color>
+    <color name="clockweather_42_theme1_clocktext_text3_textcolor">#000000</color>
+    <color name="clockweather_42_theme1_clocktext_text4_textcolor">#000000</color>
+    <color name="clockweather_42_theme1_clocktext_text5_textcolor">#000000</color>
+
+    <integer name="clockweather_42_theme1_clocktext_text1_textsize">120</integer>
+    <integer name="clockweather_42_theme1_clocktext_text2_textsize">120</integer>
+    <integer name="clockweather_42_theme1_clocktext_text3_textsize">120</integer>
+    <integer name="clockweather_42_theme1_clocktext_text4_textsize">120</integer>
+    <integer name="clockweather_42_theme1_clocktext_text5_textsize">120</integer>
+
+    <color name="clockweather_42_theme1_clocktext_text1_shadowcolor">#7000</color>
+    <color name="clockweather_42_theme1_clocktext_text2_shadowcolor">#7000</color>
+    <color name="clockweather_42_theme1_clocktext_text3_shadowcolor">#7000</color>
+    <color name="clockweather_42_theme1_clocktext_text4_shadowcolor">#7000</color>
+    <color name="clockweather_42_theme1_clocktext_text5_shadowcolor">#7000</color>
+
+    <dimen name="clockweather_42_theme1_clocktext_text1_shadowradius">1px</dimen>
+    <dimen name="clockweather_42_theme1_clocktext_text2_shadowradius">1px</dimen>
+    <dimen name="clockweather_42_theme1_clocktext_text3_shadowradius">1px</dimen>
+    <dimen name="clockweather_42_theme1_clocktext_text4_shadowradius">1px</dimen>
+    <dimen name="clockweather_42_theme1_clocktext_text5_shadowradius">1px</dimen>
+
+    <integer name="clockweather_42_theme1_clocktext_text1_shadowdx">0</integer>
+    <integer name="clockweather_42_theme1_clocktext_text2_shadowdx">0</integer>
+    <integer name="clockweather_42_theme1_clocktext_text3_shadowdx">0</integer>
+    <integer name="clockweather_42_theme1_clocktext_text4_shadowdx">0</integer>
+    <integer name="clockweather_42_theme1_clocktext_text5_shadowdx">0</integer>
+    <integer name="clockweather_42_theme1_clocktext_text1_shadowdy">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text2_shadowdy">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text3_shadowdy">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text4_shadowdy">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text5_shadowdy">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text1_shadowheight">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text2_shadowheight">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text3_shadowheight">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text4_shadowheight">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text5_shadowheight">1</integer>
+    <integer name="clockweather_42_theme1_clocktext_text1_offset">2</integer>
+    <integer name="clockweather_42_theme1_clocktext_text2_offset">2</integer>
+    <integer name="clockweather_42_theme1_clocktext_text3_offset">2</integer>
+    <integer name="clockweather_42_theme1_clocktext_text4_offset">2</integer>
+    <integer name="clockweather_42_theme1_clocktext_text5_offset">2</integer>
+
+    <bool name="is_42_clock_text1_use_shadow">false</bool>
+    <bool name="is_42_clock_text2_use_shadow">false</bool>
+    <bool name="is_42_clock_text3_use_shadow">false</bool>
+    <bool name="is_42_clock_text4_use_shadow">false</bool>
+    <bool name="is_42_clock_text5_use_shadow">false</bool>
+
+    <string name="clockweather_42_theme1_clocktext_text1_ttf">clock text typeface.ttf</string>
+    <string name="clockweather_42_theme1_clocktext_text2_ttf">clock text typeface.ttf</string>
+    <string name="clockweather_42_theme1_clocktext_text3_ttf">clock text typeface.ttf</string>
+    <string name="clockweather_42_theme1_clocktext_text4_ttf">clock text typeface.ttf</string>
+    <string name="clockweather_42_theme1_clocktext_text5_ttf">clock text typeface.ttf</string>
+    
+</resources>

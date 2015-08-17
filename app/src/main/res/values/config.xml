@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="ifContainBattery">true</bool>
+    <bool name="ifContainXK">true</bool>
+    <bool name="ifContainAlarm">true</bool>
+    <bool name="ifContainEvents">true</bool>
+    <bool name="ifContainLunerAndHoliday">true</bool>
+</resources>
